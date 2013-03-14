@@ -1,0 +1,12 @@
+---
+
+- hosts: webserver
+  gather_facts: False
+
+
+  vars:
+    os_type: debian
+
+
+  tasks:
+    - include: $os_type.yml
